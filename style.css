@@ -27,11 +27,10 @@ html {
 #text {
 	
 	width: 50%;
-	font-family: futura bold;
+	font-family: futura;
 	margin: auto;
 	animation: gradient 7s infinite;
 	padding-top: 5%;
-	font-size: 150%;
 }
 #text.p {
 	text-align: center;
