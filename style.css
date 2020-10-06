@@ -12,39 +12,64 @@ html {
 }
 
 #logo {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/blurSplatter.svg);
+	text-align: center;
+	font-size: 100%;
+	
+
+
+
+
+}
+
+#text {
+	
+	width: 50%;
+	font-family: futura bold;
+	margin: auto;
+	animation: gradient 7s infinite;
+	padding-top: 5%;
+	font-size: 150%;
+}
+#text.p {
+	text-align: center;
+}
+
+.image {
+	position: relative;
 	margin: auto;
 	width: 50%;
-	background-image: url(images/blurSplatter.svg);
-	background-image-position
-	text-align: center;
-	font-family: futura;
-	border-right: .5rem  black;
-	border-left: .1rem dashed black;
-
-
-
-}
-
-.text {
-	padding-top: -20rem;
-	padding-bottom: 20rem;
-	padding-right: 20rem;
-	margin: auto;
-}
-
-#logo, svg {
-	animation: move 7s infinite;
 	
+}
+svg {
+
+	animation: move 7s infinite;
 }
 
 @keyframes move {
-	0% {width: 1rem; opacity: .8; top: 0; right: 0}
-	40% {width: 20rem; opacity: 1}
-	50% {width: 4rem; opacity: 1}
-	60% {width: 7rem; opacity: .8}
-	70% {width: 2rem; opacity: 1}
-	80% {width: 4rem; opacity: 0.8}
-	90% {width: 2rem; opacity: 0.8}
-	100% {width: 1rem; opacity: 0.8: color: #FFFFFF;}
+	0% {width: 5%; opacity: .8}
+	40% {width: 100%; opacity: 1; margin-top: 0%}
+	44% {width: 85%; opacity: .9; margin-top: -1%}
+	48% {width: 100%; opacity: 1; margin-top: 0%}
+	60% {width: 30%; opacity: 1; margin-top: -1%}
+	70% {width: 35%; opacity: .8; margin-top: 0%}
+	77% {width: 10%; opacity: 1; margin-top: -1%}
+	85% {width: 20%; opacity: 0.8; margin-top: 0%}
+	90% {width: 10%; opacity: 1; margin-top: -1%}
+	98% {width: 12%; opacity: 0.8; margin-top: 0%}
+	100% {width: 5%; opacity: .8; margin-top: 0%}
+
+}
+
+@keyframes gradient {
+	0% {color: #98FFDF}
+	12% {color: #EFD05F}
+	37% {color: #36886F}
+	62% {color: #D57C6A}
+	87% {color: white}
+	100% {color: #98FFDF}
+
 
 }
